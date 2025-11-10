@@ -1,0 +1,20 @@
+:root{--bg:#0b1220;--fg:#0b1220;--muted:#475569;--card:#0f172a;--ink:#0b1220;--accent:#16a34a;--paper:#ffffff}
+:root.dark{--bg:#0b1220;--paper:#0b1220;--ink:#e5e7eb;--card:#0b1220;--muted:#94a3b8}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Noto Serif Devanagari", ui-serif, Georgia, serif; background:var(--paper); color:var(--ink); line-height:1.85}
+.container{max-width:860px;margin:0 auto;padding:0 1rem}
+.site-header{position:sticky;top:0;background:linear-gradient(180deg, rgba(2,6,23,.95), rgba(2,6,23,.85) 60%, rgba(2,6,23,0));color:#fff;padding:1rem 0 0.5rem;border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:saturate(120%) blur(8px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.title{font-weight:700;letter-spacing:.5px;margin:0;font-size:clamp(1.35rem, 2.2vw, 1.75rem)}
+.subtitle{margin:.25rem 0 0.5rem;color:#cbd5e1;font-size:.95rem}
+.actions button{appearance:none;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;border-radius:8px;padding:.5rem .65rem;font-size:1rem;cursor:pointer}
+.actions button:hover{background:rgba(255,255,255,.08)}
+.story{background:linear-gradient(180deg, #fff, #fff), radial-gradient(1200px 600px at 50% -200px, rgba(20,184,166,.08), transparent 60%); background-clip:padding-box; border-radius:16px; padding:1.25rem; margin-top:1rem}
+:root.dark .story{background:linear-gradient(180deg, #0b1220, #0b1220), radial-gradient(1200px 600px at 50% -200px, rgba(45,212,191,.08), transparent 60%)}
+.story h2{margin:1.25rem 0 .5rem;font-size:1.15rem;color:var(--accent)}
+.story p{margin:.75rem 0;font-size:1.08rem}
+.story-footer{margin-top:1.25rem;padding-top:.75rem;border-top:1px dashed rgba(0,0,0,.12)}
+:root.dark .story-footer{border-top-color:rgba(255,255,255,.15)}
+.story-footer .meta{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+@media (min-width: 768px){.story{padding:2rem}}
